@@ -1,0 +1,32 @@
+{
+  "name": "pptr-cucumber",
+  "version": "1.0.0",
+  "description": "Puppeteer with Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js -f json:cucumber_report.js",
+    "generate:report": "node report.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorFerro/PPTR-CUCUMBER.git"
+  },
+  "keywords": [
+    "puppeteer",
+    "cucumber",
+    "gherkin",
+    "javascript"
+  ],
+  "author": "Igor Ferro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgorFerro/PPTR-CUCUMBER/issues"
+  },
+  "homepage": "https://github.com/IgorFerro/PPTR-CUCUMBER#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^6.0.5",
+    "cucumber-html-report": "^0.6.5",
+    "puppeteer": "^2.0.0"
+  }
+}
