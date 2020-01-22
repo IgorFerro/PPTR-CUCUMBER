@@ -6,6 +6,7 @@ class CustomWorld {
   async launchBrowser() {
     this.browser = await puppeteer.launch({ headless: false });
     this.page = await this.browser.newPage();
+    await this.page.setDefaultNavigationTimeout(15000); 
   }
 
   async closeBrowser() {
@@ -18,8 +19,9 @@ class CustomWorld {
 
   async fillLoginForm() {
   await this.page.waitForSelector("#login_form");
-  await this.page.type("user_login","username");
-  await this.page.type("user_password","password");
+  await this.page.click("#signin_button"); 
+  await this.page.type("#user_login","username");
+  await this.page.type("#user_password","password");
 
   }
 

@@ -6,3 +6,7 @@ Puppeteer with Cucumber
 2. npm i cucumber
 3. npm i cucumber-html-report
 4. npm i chai
+
+# Generate Report
+1. npm run generate:report
+

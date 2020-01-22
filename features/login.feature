@@ -4,6 +4,6 @@ Feature: Login
 
     Scenario: User can login to application
        Given I open login page
-       When I fill login form 
-       And Click on the submit button
+       When I fill the login form 
+       And  I click on the submit button
        Then I expect to see aplication content

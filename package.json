@@ -4,7 +4,7 @@
   "description": "Puppeteer with Cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js -f json:cucumber_report.js",
+    "test": "cucumber-js -f json:cucumber_report.json",
     "generate:report": "node report.js"
   },
   "repository": {
